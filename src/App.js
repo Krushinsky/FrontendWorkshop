@@ -1,23 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Login from './Login';
+import Logout from './Logout';
+import Items from './Components/ItemsComponents/Items';
+import AllCategories from './Components/Filter/AllCategories';
+import Cart from './Components/Cart/Cart';
+import Service from "../src/Service";
+import StripeContainer from './Stripe/StripeContainer';
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='Header'>
+        <div>
+          <h1>
+            Home Workshop
+          </h1>
+        </div>
+
+        <div className='Login'>
+          <Login/>
+          <Logout/>
+        </div>
+
+      </div>
+      <div className='Service'>
+        <div><AllCategories/></div>
+        <div><Items/></div>
+        <div><Cart/></div>
+      </div>
+      
+      <div className='Stripe'>
+        <StripeContainer/>
+      </div>
+      
+      <div>
+        <Service/>
+      </div>
+      
+      
     </div>
   );
 }

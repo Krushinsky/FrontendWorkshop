@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1efef;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  .Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Login{
+    padding-right: 40px;
+  }
+
+  h1{
+    padding-left: 40px;
+  }
+  .Service{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  
+  .cartIcon{
+    width: 40px;
+  }
+
+  .Delete{
+    width: 40px;
+    cursor: pointer;
+  }
+
+  .Screen{
+    width: 50vh;
+    height:fit-content;
+  }
+
+  .ItemsCenter{
+    display: flex;
+    padding: 15px;
+  }
+  .ItemsCenterText{
+    padding: 40px;
+  }
+  .itemName, .ItemPrice, .AddToCart, .ChageQuantity{
+    margin-top: 10px;
+    border: none;
+    font-size: 15px;
+  }
+.removeQuantity, .quantity, .addQuantity{
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+}
+.removeQuantity, .AddToCart, .addQuantity{
+    cursor: pointer;
+}
+.AddToCart:hover,.removeQuantity:hover, .addQuantity:hover, .Log:hover, .Pay:hover{
+    background-color: #d4d1d1;
+    color: black;
+}
+.ServiceFilter{
+    padding: 10px;
+    cursor: pointer;
+}
+.Log{
+    padding: 10px;
+    border:none;
+    cursor: pointer;
+}
+.Reviews{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.Input{
+    margin-top: 15px;
+    width: 400px;
+    background-color: #fff;
+}
+.BtnComments{
+    width: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.Stripe{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.Pay{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #fff;
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #1e53e7de;
+    border-radius: 4vh;
+    margin: 5vh;
+}
+.thirdColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Payment{
+  border: 1px solid black;
+  border-radius: 5vh;
+  padding: 2vh;
+}
+/* .hide-Payment{
+  border: 1px solid black;
+  border-radius: 5vh;
+  padding: 2vh;
+  display: block;
+} */
+.CardElement{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-left: 5vh;
 }
